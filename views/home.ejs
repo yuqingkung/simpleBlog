@@ -1,0 +1,17 @@
+
+<%- include("./particals/header.ejs") -%>
+<h1>Home</h1>
+<p><%=HTMLHomeStartingContent%></p>
+
+  <% for (var i=0; i< HTMLblogTitles.length; i++){ %>
+  <div class="wrap">
+    <h1><%=HTMLblogTitles[i] %></h1>
+    <span>
+      <p class="lineWrap"><%=HTMLblogTexts[i] %> </p>
+
+    </span>
+    <a href="/post/<%=HTMLblogTitles[i] %>" style="vertical-align: top;">read more</a>
+  </div>
+
+  <% } %>
+  <%- include("./particals/footer.ejs") -%>

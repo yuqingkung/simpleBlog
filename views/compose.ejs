@@ -1,0 +1,14 @@
+<%- include("./particals/header") -%>
+<h1>Compose</h1>
+<form class="blogPost" action="/compose" method="post">
+  <h3>Title</h3>
+  <input type="text" name="HTMLblogTitle" size="80">
+  <h3>Post</h3>
+  <textarea name="HTMLblogText" rows="20" cols="80"></textarea>
+  <br>
+  <button type="submit" name="publish">Publish</button>
+</form>
+
+
+
+<%- include("particals/footer") -%>
