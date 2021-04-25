@@ -1,13 +1,18 @@
 <%- include("./particals/header") -%>
 <h1>Compose</h1>
+
 <form class="blogPost" action="/compose" method="post">
-  <h3>Title</h3>
-  <input type="text" name="HTMLblogTitle" size="80">
-  <h3>Post</h3>
-  <textarea name="HTMLblogText" rows="20" cols="80"></textarea>
-  <br>
-  <button type="submit" name="publish">Publish</button>
+  <div class="form-group form-check">
+    <label>Title</label>
+    <input type="text" class="form-control" name="HTMLblogTitle" size="80">
+
+    <label>Post</label>
+    <textarea name="HTMLblogText" class="form-control" rows="20" cols="80"></textarea>
+  </div>
+    <button type="submit" class="btn btn-primary" name="button">Publish</button>
 </form>
+
+
 
 
 
